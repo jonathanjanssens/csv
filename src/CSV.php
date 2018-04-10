@@ -45,7 +45,7 @@ class CSV
     {
         $handle = tmpfile();
         $meta = stream_get_meta_data($handle);
-        $first = array_first($array);
+        $first = $array[0];
 
         if(is_array($first)) {
             fputcsv($handle, array_keys($first));
