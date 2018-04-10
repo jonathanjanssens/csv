@@ -1,0 +1,35 @@
+{
+    "name": "jtn/csv",
+    "description": "Convert associative arrays to CSV and CSV to associative arrays",
+    "type": "library",
+    "keywords": [ "csv", "array", "csv to array", "array to csv" ],
+    "require-dev": {
+        "php": ">=7.0.0",
+        "phpunit/phpunit": "6.2.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jtn\\CSV\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jtn\\CSV\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit --colors=always"
+    },
+    "license": "GPL-3.0-only",
+    "authors": [
+        {
+            "name": "Jonathan Janssens",
+            "email": "jonathan.janssens@gmail.com"
+        }
+    ],
+    "config": {
+      "platform": {"php": "7.0"},
+      "preferred-install": "dist",
+      "sort-packages": true
+    }
+}
